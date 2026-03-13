@@ -1,4 +1,4 @@
-class Company():
+class Company :
     def __init__(self, department):
         self.department = department
         self.sections = {}
