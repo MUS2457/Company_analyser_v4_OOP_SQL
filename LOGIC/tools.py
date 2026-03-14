@@ -59,7 +59,7 @@ def search_section(conn):
 
         cursor.execute(""" SELECT com.created_at, com.department, sec.employee, sec.salary
                    FROM company com JOIN sections sec ON com.id = sec.department_id
-                   WHERE sec.department = ? """, (user.upper(),))
+                   WHERE com.department = ? """, (user.upper(),))
 
         section = cursor.fetchall()
 
