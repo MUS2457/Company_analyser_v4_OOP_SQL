@@ -52,3 +52,5 @@ def insert_into_table(conn,company):
                 )
 
     conn.commit()
+
+
